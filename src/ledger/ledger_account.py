@@ -12,6 +12,6 @@ class AccountType(Enum):
     CONSUMER_CREDIT = 7_000_000 + n_consumer_credit_accounts
 
 class LedgerAccount:
-    def __init__(self, account_type: AccountType, account_id: int, account_name: str):
+    def __init__(self, account_type: AccountType):
         self.account_type: AccountType = account_type
         self.account_id: int =
