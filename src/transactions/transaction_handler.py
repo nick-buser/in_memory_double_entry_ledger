@@ -14,7 +14,7 @@ def handle_transaction(
     match transaction_type:
         case TransactionType.CREDIT_PURCHASE               :
             credit_type = AccountType.CONSUMER_CREDIT
-            debit_type = AccountType.CONSUMER_CREDIT
+            debit_type = AccountType.OPERATING
 
         case TransactionType.DEBIT_PURCHASE:
             credit_type = AccountType.OPERATING
