@@ -73,7 +73,7 @@ def validate_transaction(credit_type, debit_type, credited_account, debited_acco
     if credited_account.account_id == debited_account.account_id:
         raise ValueError(f"An account cannot issue a transaction from itself to itself")
 
-    if amount <= 0 and not isinstance(amount, int):
+    if amount <= 0 or not isinstance(amount, int):
         # Arguable whether this should be considered a bug indication and throw an exception
         return False
 
