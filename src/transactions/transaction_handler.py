@@ -12,7 +12,7 @@ def handle_transaction(
     amount          : int
 ) -> Transaction | None:
     match transaction_type:
-        case TransactionType.CREDIT_PURCHASE               :
+        case TransactionType.CREDIT_PURCHASE:
             credit_type = AccountType.CONSUMER_CREDIT
             debit_type = AccountType.OPERATING
 

@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from ledger.account_type import AccountType
 from enum import StrEnum, auto
 
 class TransactionType(StrEnum):

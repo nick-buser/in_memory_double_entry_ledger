@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from ledger.ledger_account import LedgerAccount
 import time
 
 class Transaction:
