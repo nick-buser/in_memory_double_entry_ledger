@@ -1,2 +1,6 @@
 [tool.pyrefly]
 search-path = ["src"]
+
+[tool.pytest]
+pythonpath = ["src"]
+testpaths = ["tests"]

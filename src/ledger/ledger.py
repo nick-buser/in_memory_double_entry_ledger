@@ -59,8 +59,8 @@ class Ledger:
     def issue_transaction(
             self,
             transaction_type: TransactionType,
-            credited_account_id: int,
             debited_account_id: int,
+            credited_account_id: int,
             amount : int
     )-> bool:
         if credited_account_id not in self.accounts:
