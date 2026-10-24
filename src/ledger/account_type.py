@@ -2,7 +2,7 @@
 from enum import StrEnum, auto
 
 
-class AccountType(Enum):
+class AccountType(StrEnum):
     # accounts are a simplification for restricted implementation and not a claim for how I'd design a complete business ledger
     ASSETS            = auto()
     PAYMENTS          = auto()

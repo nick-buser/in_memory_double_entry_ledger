@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+from ledger.account_type import AccountType
 from enum import StrEnum, auto
 
 class TransactionType(StrEnum):
     # simplified set of transactions to limit implementation scope
     CREDIT_PURCHASE                = auto()
     DEBIT_PURCHASE                 = auto()
-    CHECKING_PAYMENT               = auto()
     TRANSFER_CHECKING_TO_CHECKING  = auto()
     TRANSFER_CHECKING_TO_SAVINGS   = auto()
     TRANSFER_CHECKING_TO_PAYMENTS  = auto()
